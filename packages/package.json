@@ -1,0 +1,43 @@
+{
+  "name": "@lafabrique/react-fab-dsfr",
+  "version": "0.1.0",
+  "description": "Librairie de composants génériques basés sur la React DSFR",
+  "keywords": [
+    "react-dsfr"
+  ],
+  "license": "ISC",
+  "author": "Margaux",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@codegouvfr/react-dsfr": "^1.32.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^9.0.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "clsx": "^2.1.1",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "@codegouvfr/react-dsfr": ">=1.0.0",
+    "@emotion/react": ">=11.0.0",
+    "@emotion/styled": ">=11.14.1",
+    "@mui/material": ">=9.0.0",
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
+  }
+}
