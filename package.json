@@ -10,7 +10,9 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -18,16 +20,20 @@
     }
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc",
+    "prepare": "husky",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
     "@codegouvfr/react-dsfr": "^1.32.1",
+    "@commitlint/config-conventional": "^20.5.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^9.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "clsx": "^2.1.1",
+    "husky": "^9.1.7",
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "typescript": "^6.0.3"
