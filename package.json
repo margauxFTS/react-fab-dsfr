@@ -25,25 +25,28 @@
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "devDependencies": {
-    "@codegouvfr/react-dsfr": "^1.32.1",
     "@commitlint/config-conventional": "^20.5.0",
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mui/material": "^9.0.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/jest": "^30.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "clsx": "^2.1.1",
     "husky": "^9.1.7",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
-    "@codegouvfr/react-dsfr": ">=1.0.0",
-    "@emotion/react": ">=11.0.0",
-    "@emotion/styled": ">=11.14.1",
-    "@mui/material": ">=9.0.0",
+    "@codegouvfr/react-dsfr": "^1.32.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^9.0.0",
     "react": ">=19.0.0",
     "react-dom": ">=19.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1"
   }
 }
