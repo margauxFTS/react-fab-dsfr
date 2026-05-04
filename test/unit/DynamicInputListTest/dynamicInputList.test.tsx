@@ -60,7 +60,7 @@ describe("DynamicInputList", () => {
 
         expect(deleteButtons.length).toBeGreaterThanOrEqual(1);
 
-        fireEvent.click(deleteButtons[0]); // Supprime le premier
+        fireEvent.click(deleteButtons[0]!); // Supprime le premier
 
         expect(defaultProps.onSetValues).toHaveBeenCalledWith(["Item 2"]);
     });
@@ -77,3 +77,6 @@ describe("DynamicInputList", () => {
         ]);
     });
 });
+
+// au revoir les amis ...
+

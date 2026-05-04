@@ -22,10 +22,14 @@
   "scripts": {
     "build": "npx tsc",
     "prepare": "npx tsc && husky",
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "jest"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^20.5.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@types/jest": "^30.0.0",
