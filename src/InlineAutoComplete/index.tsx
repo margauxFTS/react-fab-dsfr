@@ -8,12 +8,12 @@ import {
     type AutocompleteDsfrValue,
     type AutoCompleteValue,
     extractAutocompleteValue,
-} from "../AutoCompleteDsfr/index.js";
+} from "../AutoCompleteDsfr/index";
 
 import {
     InlineEditSaveCancelButtons,
     type InlineEditSaveCancelButtonsProps,
-} from "../InlineSaveCancelButtons/index.js";
+} from "../InlineSaveCancelButtons/index";
 
 type InlineAutoCompleteProps = {
     label: ReactNode;

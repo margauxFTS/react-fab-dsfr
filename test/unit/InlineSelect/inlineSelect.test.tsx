@@ -3,7 +3,7 @@
  */
 import "@testing-library/jest-dom";
 
-import { InlineSelect } from "@lafabrique/react-fab-dsfr";
+import { InlineSelect } from "@/src/InlineSelect/index";
 import { fireEvent, render, screen } from "@testing-library/react";
 
 describe("InlineSelect", () => {

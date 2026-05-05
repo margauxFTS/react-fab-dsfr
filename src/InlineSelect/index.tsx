@@ -6,7 +6,7 @@ import { type ChangeEvent, type ReactNode, useState } from "react";
 import {
     InlineEditSaveCancelButtons,
     type InlineEditSaveCancelButtonsProps,
-} from "../InlineSaveCancelButtons/index.js";
+} from "../InlineSaveCancelButtons/index";
 
 type InlineSelectProps = {
     label: ReactNode;

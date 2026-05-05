@@ -11,7 +11,7 @@ import {
     extractAutocompleteValue,
 } from "@/src/AutoCompleteDsfr/index";
 
-jest.mock("@/app/lib/clsx", () => jest.fn(() => "mock-clsx"));
+jest.mock("clsx", () => jest.fn(() => "mock-clsx"));
 
 describe("AutoCompleteDsfr", () => {
     const mockOptions: AutoCompleteValue[] = [

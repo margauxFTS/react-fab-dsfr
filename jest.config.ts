@@ -33,6 +33,7 @@ const config: Config = {
         "!<rootDir>/coverage/**",
         "!<rootDir>/test/**",
         "!<rootDir>/playwright-report/**",
+        "!<rootDir>/src/index.ts",
     ],
 
     // The directory where Jest should output its coverage files
@@ -209,8 +210,8 @@ const config: Config = {
 
     // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
     transformIgnorePatterns: [
-        "/node_modules/(?!@codegouvfr/react-dsfr",
-        ").*/",
+        "/node_modules/(?!@codegouvfr/react-dsfr).*/",
+        
     ],
 
     // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
