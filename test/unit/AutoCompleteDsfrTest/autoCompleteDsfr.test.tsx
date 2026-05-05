@@ -19,7 +19,7 @@ describe("AutoCompleteDsfr", () => {
         { id: "2", label: "Option 2" },
     ];
 
-    it("doit rendre l'autocomplete avec les options", () => {
+    function setup(propsOverride = {}) {
         render(
             <AutoCompleteDsfr
                 label="Test Label"
@@ -28,8 +28,13 @@ describe("AutoCompleteDsfr", () => {
                     value: null,
                     onChange: jest.fn(),
                 }}
+                {...propsOverride}
             />,
         );
+    }
+
+    it("doit rendre l'autocomplete avec les options", () => {
+        setup();
         expect(screen.getByText("Test Label")).toBeInTheDocument();
         expect(screen.getByRole("combobox")).toBeInTheDocument();
     });
@@ -41,5 +46,14 @@ describe("AutoCompleteDsfr", () => {
         expect(extractAutocompleteValue(null)).toBeNull();
         expect(extractAutocompleteValue("string")).toBeNull();
         expect(extractAutocompleteValue([value, "string"])).toEqual(value);
+        expect(extractAutocompleteValue(["string", "autre"])).toBeNull();
+    });
+
+    it("doit afficher un message d'erreur", () => {
+        setup({
+            state: "error",
+            stateRelatedMessage: "Error message",
+        })
+        expect(screen.getByText("Error message")).toBeInTheDocument();
     });
 });

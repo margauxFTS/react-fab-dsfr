@@ -84,7 +84,7 @@ describe("InlineInput", () => {
 
         fireEvent.click(screen.getByTitle("Enregistrer"));
 
-        expect(onChange).toHaveBeenCalledWith("Jane");
+        expect(onChange).toHaveBeenCalledWith(null, "Jane");
     });
 
     it("resets value when re-entering modify mode", () => {
