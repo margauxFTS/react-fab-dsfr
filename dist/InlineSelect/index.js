@@ -3,7 +3,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import Select, {} from "@codegouvfr/react-dsfr/SelectNext";
 import { Grid } from "@mui/material";
 import { useState } from "react";
-import { InlineEditSaveCancelButtons, } from "../InlineSaveCancelButtons/index.js";
+import { InlineEditSaveCancelButtons, } from "../InlineSaveCancelButtons/index";
 export function InlineSelect({ label, value, options, name, fieldSize = "auto", onChange = undefined, editable = true, disabled = false, nativeButtonsProps = undefined, }) {
     const [modifiying, setModifiying] = useState(false);
     const [edition, setEdition] = useState(value);

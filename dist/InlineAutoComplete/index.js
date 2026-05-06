@@ -3,8 +3,8 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import Input from "@codegouvfr/react-dsfr/Input";
 import { Grid } from "@mui/material";
 import { useState } from "react";
-import { AutoCompleteDsfr, extractAutocompleteValue, } from "../AutoCompleteDsfr/index.js";
-import { InlineEditSaveCancelButtons, } from "../InlineSaveCancelButtons/index.js";
+import { AutoCompleteDsfr, extractAutocompleteValue, } from "../AutoCompleteDsfr/index";
+import { InlineEditSaveCancelButtons, } from "../InlineSaveCancelButtons/index";
 export function InlineAutoComplete({ label, value = undefined, options, noOptionsText = "", fieldSize = "auto", onChange = undefined, editable = true, disabled = false, nativeButtonsProps = undefined, nativeInputProps = {}, }) {
     const [modifiying, setModifiying] = useState(false);
     const [edition, setEdition] = useState(value);

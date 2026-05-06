@@ -1,7 +1,7 @@
 import { type GridSize } from "@mui/material";
 import { type ReactNode } from "react";
-import { type AutoCompleteValue } from "../AutoCompleteDsfr/index.js";
-import { type InlineEditSaveCancelButtonsProps } from "../InlineSaveCancelButtons/index.js";
+import { type AutoCompleteValue } from "../AutoCompleteDsfr/index";
+import { type InlineEditSaveCancelButtonsProps } from "../InlineSaveCancelButtons/index";
 type InlineAutoCompleteProps = {
     label: ReactNode;
     value?: AutoCompleteValue;

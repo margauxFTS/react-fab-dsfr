@@ -2,7 +2,7 @@ import type { FrIconClassName, RiIconClassName } from "@codegouvfr/react-dsfr";
 import { type InputProps } from "@codegouvfr/react-dsfr/Input";
 import { type GridSize } from "@mui/material";
 import { type ReactNode } from "react";
-import { type InlineEditSaveCancelButtonsProps } from "../InlineSaveCancelButtons/index.js";
+import { type InlineEditSaveCancelButtonsProps } from "../InlineSaveCancelButtons/index";
 type InlineInputProps = {
     label: ReactNode;
     value: string;

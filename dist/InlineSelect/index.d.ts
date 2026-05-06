@@ -1,7 +1,7 @@
 import { type SelectProps } from "@codegouvfr/react-dsfr/SelectNext";
 import { type GridSize } from "@mui/material";
 import { type ReactNode } from "react";
-import { type InlineEditSaveCancelButtonsProps } from "../InlineSaveCancelButtons/index.js";
+import { type InlineEditSaveCancelButtonsProps } from "../InlineSaveCancelButtons/index";
 type InlineSelectProps = {
     label: ReactNode;
     value: SelectProps.Option;

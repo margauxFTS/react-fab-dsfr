@@ -137,3 +137,6 @@ import { InlineEditSaveCancelButtons } from "@lafabrique/react-fab-dsfr";
 |`onSave`|-|Action déclenchée lors du clic sur "enregistrer"|
 |`onCancel`|`undefined`|Action optionnelle déclenchée lors du clic sur "annuler"|
 |`disabled`|`false`|Désactive le bouton d'édition|
+
+
+[![Node.js Unit Tests](https://github.com/margrosse/react-fab-dsfr/actions/workflows/testUnit.yml/badge.svg)](https://github.com/margrosse/react-fab-dsfr/actions/workflows/testUnit.yml)
