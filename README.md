@@ -1,13 +1,20 @@
+<div align=center>
 
 # @lafabrique/react-fab-dsfr
 
 Librairie de composants génériques React basée sur le [Système Design de l'Etat (DSFR)](https://components.react-dsfr.codegouv.studio/?path=/story/%F0%9F%87%AB%F0%9F%87%B7-introduction--page), la référence officielle pour les interfaces des sites en `.gouv.fr`.
 
+> Cette librairie est développée dans l'écosystème **LaFabrique** du **[Service de la Transformation Numérique](https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/service-de-transformation-numerique-stn)** de la **Police Nationale**.
 
   <a href="https://github.com/margrosse/react-fab-dsfr/actions/workflows/testUnit.yml">
     <img src="https://github.com/margrosse/react-fab-dsfr/actions/workflows/testUnit.yml/badge.svg" alt="ci test"/>
   </a>
-  
+  <a href="https://github.com/margrosse/react-fab-dsfr/releases">
+  <img src="https://img.shields.io/github/v/release/margrosse/react-fab-dsfr?label=version&color=blue" alt="Version"/>
+  </a>
+ 
+</div>
+
 --- 
 
 ## Installation
