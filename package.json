@@ -1,5 +1,6 @@
 {
-  "name": "@lafabrique/react-fab-dsfr",
+  "name": "@margrosse/react-fab-dsfr",
+  "repository": "https://github.com/margrosse/react-fab-dsfr",
   "version": "0.1.0",
   "description": "Librairie de composants génériques basés sur la React DSFR",
   "keywords": [
