@@ -1,0 +1,7 @@
+unit-tests:
+
+  image: node:24
+  
+  script:
+    - npm install
+    - npm test -- --watchAll=false
