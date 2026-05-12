@@ -12,7 +12,7 @@ Librairie de composants génériques React basée sur le [Système Design de l'E
   <a href="https://github.com/margrosse/react-fab-dsfr/releases">
   <img src="https://img.shields.io/github/v/release/margrosse/react-fab-dsfr?label=version&color=blue" alt="Version"/>
   </a>
- 
+
 </div>
 
 --- 
@@ -56,7 +56,7 @@ function MyComponent() {
 Liste de champs texte dynamique permettant à l'utilisateur d'ajouter ou de supprimer des entrées.
 
 <div align="left">
-  <img src="./asset/dynamicinputlistClair.png" width="500"/>
+  <img src="./asset/dynamicinputlistClair.png" width="350"/>
 </div>
 
 <br/>
@@ -85,7 +85,7 @@ import { DynamicInputList } from "@lafabrique/react-fab-dsfr";
 Champ avec autocomplétion basculant entre un mode lecture et un mode édition. Basé sur MUI adapté au style DSFR.
 
 <div align="left">
-  <img src="./asset/inlineautocompleteClair.png" width="600"/>
+  <img src="./asset/inlineautocompleteClair.png" width="450"/>
 </div>
 
 <br/>
@@ -114,7 +114,7 @@ import { InlineAutoComplete } from "@lafabrique/react-fab-dsfr";
 Champ texte simple affichable en mode lecture ou édition, incluant les boutons de gestion d'état.
 
 <div align="left">
-  <img src="./asset/inlineinputClair.png" width="600"/>
+  <img src="./asset/inlineinputClair.png" width="450"/>
 </div>
 
 <br/>
@@ -142,7 +142,7 @@ import { InlineInput } from "@lafabrique/react-fab-dsfr";
 Liste déroulante utilisant `SelectNext` du DSFR, basculant entre mode lecture et édition.
 
 <div align="left">
-  <img src="./asset/inlineselect.png" width="600"/>
+  <img src="./asset/inlineselect.png" width="500"/>
 </div>
 
 <br/>
@@ -169,7 +169,7 @@ import { InlineSelect } from "@lafabrique/react-fab-dsfr";
 Composant utilitaire interne utilisé pour afficher les boutons d'action (modifier, enregistrer, annuler).
 
 <div align="left">
-  <img src="./asset/inlinesavecancelbuttonsClair.png" width="250"/>
+  <img src="./asset/inlinesavecancelbuttonsClair.png" width="180"/>
 </div>
 
 <br/>
