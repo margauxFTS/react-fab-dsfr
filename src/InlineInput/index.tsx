@@ -13,7 +13,6 @@ import {
 type InlineInputProps = {
     label: ReactNode;
     value: string;
-    name: string;
     fieldSize?: GridSize;
     onChange?: (
         event: React.ChangeEvent<HTMLInputElement> | null,
@@ -29,7 +28,6 @@ type InlineInputProps = {
 export function InlineInput({
     label,
     value,
-    name,
     fieldSize = "auto",
     onChange = undefined,
     editable = true,
@@ -66,7 +64,6 @@ export function InlineInput({
                         ...nativeInputProps,
                         value: edition,
                         type: "text",
-                        id: name,
                         onChange: (event) => {
                             setEdition(event.target.value);
                             onChange?.(event);

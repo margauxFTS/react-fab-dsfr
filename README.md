@@ -4,7 +4,7 @@
 
 Librairie de composants génériques React basée sur le [Système Design de l'Etat (DSFR)](https://components.react-dsfr.codegouv.studio/?path=/story/%F0%9F%87%AB%F0%9F%87%B7-introduction--page), la référence officielle pour les interfaces des sites en `.gouv.fr`.
 
-> Cette librairie est développée dans l'écosystème **LaFabrique** du **[Service de la Transformation Numérique](https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/service-de-transformation-numerique-stn)** de la **Police Nationale**.
+> Cette librairie est développée dans l'écosystème **LaFabrique** du [Service de la Transformation Numérique](https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/service-de-transformation-numerique-stn) de la **Police Nationale**.
 
   <a href="https://github.com/margrosse/react-fab-dsfr/actions/workflows/testUnit.yml">
     <img src="https://github.com/margrosse/react-fab-dsfr/actions/workflows/testUnit.yml/badge.svg" alt="ci test"/>
@@ -21,7 +21,7 @@ Librairie de composants génériques React basée sur le [Système Design de l'E
 
 ```bash
 # Via GitHub
-npm install @lafabrique/react-fab-dsfr@github:margrosse/react-fab-dsfr
+npm install @lafabrique/react-fab-dsfr@github:margauxFTS/react-fab-dsfr
 
 # Installation des dépendances
 npm install @codegouvfr/react-dsfr @mui/material @emotion/react @emotion/styled
@@ -55,16 +55,25 @@ function MyComponent() {
 
 Liste de champs texte dynamique permettant à l'utilisateur d'ajouter ou de supprimer des entrées.
 
+<div align="left">
+  <img src="./asset/dynamicinputlistClair.png" width="500"/>
+</div>
+
+<br/>
+
 ```tsx
 import { DynamicInputList } from "@lafabrique/react-fab-dsfr";
 ```
 |Prop|Défaut|Description|
 |---|------|-----------|
 |`label`| - | Libellé affiché au-dessus de la liste|
+|`placeHolder`| - | PlaceHolder affiché dans les champs |
 |`values`| - | Tableau des valeurs courantes|
 |`onSetValues`| - | Callback appelé à chaque modification|
 |`maximumItemNumber`| `10` | Nombre maximum de champs autorisés|
+| `itemMaximumLength` | `100` | Longueur maximale de chaque champ |
 |`disabled`| `false` | Désactive tous les contrôles|
+|`disabledInputs` | `false` | Désactive les champs texte |
 |`addAllowed`| `true` | Affiche le bouton d'ajout|
 |`deleteAllowed`| `true` | Affiche les boutons de suppression|
 
@@ -74,6 +83,12 @@ import { DynamicInputList } from "@lafabrique/react-fab-dsfr";
 ### InlineAutoComplete
 
 Champ avec autocomplétion basculant entre un mode lecture et un mode édition. Basé sur MUI adapté au style DSFR.
+
+<div align="left">
+  <img src="./asset/inlineautocompleteClair.png" width="600"/>
+</div>
+
+<br/>
 
 ```tsx
 import { InlineAutoComplete } from "@lafabrique/react-fab-dsfr";
@@ -98,6 +113,12 @@ import { InlineAutoComplete } from "@lafabrique/react-fab-dsfr";
 
 Champ texte simple affichable en mode lecture ou édition, incluant les boutons de gestion d'état.
 
+<div align="left">
+  <img src="./asset/inlineinputClair.png" width="600"/>
+</div>
+
+<br/>
+
 ```tsx
 import { InlineInput } from "@lafabrique/react-fab-dsfr";
 ```
@@ -120,6 +141,12 @@ import { InlineInput } from "@lafabrique/react-fab-dsfr";
 
 Liste déroulante utilisant `SelectNext` du DSFR, basculant entre mode lecture et édition.
 
+<div align="left">
+  <img src="./asset/inlineselect.png" width="600"/>
+</div>
+
+<br/>
+
 ```tsx
 import { InlineSelect } from "@lafabrique/react-fab-dsfr";
 ```
@@ -141,6 +168,12 @@ import { InlineSelect } from "@lafabrique/react-fab-dsfr";
 
 Composant utilitaire interne utilisé pour afficher les boutons d'action (modifier, enregistrer, annuler).
 
+<div align="left">
+  <img src="./asset/inlinesavecancelbuttonsClair.png" width="250"/>
+</div>
+
+<br/>
+
 ```tsx
 import { InlineEditSaveCancelButtons } from "@lafabrique/react-fab-dsfr";
 ```
@@ -153,5 +186,3 @@ import { InlineEditSaveCancelButtons } from "@lafabrique/react-fab-dsfr";
 |`onCancel`|`undefined`|Action optionnelle déclenchée lors du clic sur "annuler"|
 |`disabled`|`false`|Désactive le bouton d'édition|
 
-
-[![Node.js Unit Tests](https://github.com/margrosse/react-fab-dsfr/actions/workflows/testUnit.yml/badge.svg)](https://github.com/margrosse/react-fab-dsfr/actions/workflows/testUnit.yml)

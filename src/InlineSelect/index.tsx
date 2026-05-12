@@ -12,7 +12,6 @@ type InlineSelectProps = {
     label: ReactNode;
     value: SelectProps.Option;
     options: SelectProps.Option[];
-    name: string;
     fieldSize?: GridSize;
     onChange?: (newValue: string | null) => void;
     editable?: boolean;
@@ -24,7 +23,6 @@ export function InlineSelect({
     label,
     value,
     options,
-    name,
     fieldSize = "auto",
     onChange = undefined,
     editable = true,
@@ -55,7 +53,6 @@ export function InlineSelect({
                     disabled={!modifiying || disabled}
                     label=""
                     nativeSelectProps={{
-                        name,
                         onChange: (event: ChangeEvent<HTMLSelectElement>) => {
                             const rawValue = event.target.value;
                             const option = options.find(

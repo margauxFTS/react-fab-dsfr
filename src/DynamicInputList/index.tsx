@@ -6,7 +6,6 @@ const ITEM_MAXIMUM_LENGTH = 100;
 
 export type DynamicInputListProps = {
     label: string;
-    name: string;
     placeHolder: string;
     values: string[];
     onSetValues: (values: string[]) => void;
@@ -20,7 +19,6 @@ export type DynamicInputListProps = {
 
 export function DynamicInputList({
     label,
-    name,
     placeHolder,
     values,
     onSetValues,
@@ -68,7 +66,6 @@ export function DynamicInputList({
                                 placeholder: placeHolder,
                                 type: "text",
                                 id: `${label}-${index}`,
-                                name,
                                 value: item,
                                 maxLength: itemMaximumLength,
                                 onChange: (event) => {
