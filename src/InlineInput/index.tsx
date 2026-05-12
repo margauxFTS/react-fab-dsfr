@@ -50,13 +50,17 @@ export function InlineInput({
     }
 
     return (
-        <Grid
+        <Grid className="row fr-grid-row--middle"
             container
             spacing={0}
         >
-            <Grid size={2}>{label}</Grid>
-            <Grid size={fieldSize}>
+            <Grid size={3}>{label}</Grid>
+           <Grid
+                className="cell-default"
+                size={fieldSize}
+            >
                 <Input
+                    className="display-none"
                     disabled={!modifiying || disabled}
                     iconId={alertIcon}
                     label=""
@@ -72,7 +76,7 @@ export function InlineInput({
                 />
             </Grid>
 
-            <Grid size={2}>
+            <Grid size={3}>
                 {editable && (
                     <InlineEditSaveCancelButtons
                         {...nativeButtonsProps}

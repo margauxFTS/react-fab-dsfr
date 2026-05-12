@@ -43,7 +43,7 @@ export function InlineSelect({
     }
 
     return (
-        <Grid
+        <Grid className="row fr-grid-row--middle"
             container
             spacing={0}
         >
@@ -68,7 +68,7 @@ export function InlineSelect({
                 />
             </Grid>
 
-            <Grid size={2}>
+            <Grid size={3}>
                 {editable && options.length > 0 && (
                     <InlineEditSaveCancelButtons
                         {...nativeButtonsProps}
