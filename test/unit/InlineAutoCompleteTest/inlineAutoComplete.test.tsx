@@ -62,6 +62,6 @@ describe("InlineAutoComplete", () => {
         });
         fireEvent.click(saveButton);
 
-        expect(onChange).toHaveBeenCalledWith("1");
+        expect(onChange).toHaveBeenCalledWith("2");
     });
 });
