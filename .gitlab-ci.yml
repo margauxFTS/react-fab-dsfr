@@ -1,3 +1,7 @@
+stages:
+  - test
+  - release
+
 unit-tests:
 
   image: node:24
@@ -5,3 +9,16 @@ unit-tests:
   script:
     - npm install
     - npm test -- --watchAll=false
+
+release:
+  stage: release
+  image: node:20-alpine
+  before_script:
+    - apk add --no-cache git
+    - npm install -g semantic-release @semantic-release/gitlab @semantic-release/changelog @semantic-release/git @semantic-release/commit-analyzer @semantic-release/release-notes-generator
+    - git remote set-url origin https://oauth2:${GITLAB_TOKEN}@gitlab.com/${CI_PROJECT_PATH}.git
+  script:
+    - semantic-release
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: manual

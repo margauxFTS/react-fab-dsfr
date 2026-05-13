@@ -26,7 +26,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.29.3",
+    "@babel/preset-env": "^7.29.5",
     "@babel/preset-react": "^7.28.5",
     "@babel/preset-typescript": "^7.28.5",
     "@commitlint/cli": "^20.5.3",
@@ -37,8 +37,8 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "husky": "^9.1.7",
-    "jest": "^30.3.0",
-    "jest-environment-jsdom": "^30.3.0",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "typescript": "^6.0.3"
@@ -47,7 +47,7 @@
     "@codegouvfr/react-dsfr": "^1.32.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@mui/material": "^9.0.0",
+    "@mui/material": "^9.0.1",
     "react": ">=19.0.0",
     "react-dom": ">=19.0.0"
   },
