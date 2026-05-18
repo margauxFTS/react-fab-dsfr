@@ -14,7 +14,6 @@ describe("InlineSelect", () => {
         render(
             <InlineSelect
                 label="Test Label"
-                name="test"
                 options={options}
                 value={choice}
             />,
@@ -28,7 +27,6 @@ describe("InlineSelect", () => {
         render(
             <InlineSelect
                 label="Test Label"
-                name="test"
                 options={options}
                 value={choice}
             />,
@@ -41,7 +39,6 @@ describe("InlineSelect", () => {
         render(
             <InlineSelect
                 label="Test"
-                name="test"
                 options={options}
                 value={choice}
             />,
@@ -58,7 +55,6 @@ describe("InlineSelect", () => {
         render(
             <InlineSelect
                 label="Test"
-                name="test"
                 onChange={handleChange}
                 options={options}
                 value={choice}
@@ -85,7 +81,6 @@ describe("InlineSelect", () => {
         render(
             <InlineSelect
                 label="Test"
-                name="test"
                 onChange={handleChange}
                 options={optionsWithEmpty}
                 value={choice}
@@ -108,7 +103,6 @@ describe("InlineSelect", () => {
             <InlineSelect
                 editable={false}
                 label="Test"
-                name="test"
                 options={options}
                 value={choice}
             />,

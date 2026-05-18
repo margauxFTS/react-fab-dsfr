@@ -4,3 +4,4 @@ export * from "./InlineSelect/index.js";
 export * from "./InlineSaveCancelButtons/index.js";
 export * from "./AutoCompleteDsfr/index.js";
 export * from "./DynamicInputList/index.js";
+export * from "./DateTimeInput/index.js";

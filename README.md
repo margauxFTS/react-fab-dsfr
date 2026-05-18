@@ -164,6 +164,21 @@ import { InlineSelect } from "@lafabrique/react-fab-dsfr";
 
 ----
 
+### DateTimeInline
+
+```tsx
+import DateTimeInput from "@lafabrique/react-fab-dsfr";
+```
+|Prop| Défaut | Description|
+|----|--------|------------|
+|`onChange`|`undefined`| |
+|`dateProps`| - | |
+|`timeProps`|`undefined`| |
+|`withTime`|`false`| |
+|`gridProps`|`undefined`| |
+
+----
+
 ### InlineSaveCancelButtons
 
 Composant utilitaire interne utilisé pour afficher les boutons d'action (modifier, enregistrer, annuler).
