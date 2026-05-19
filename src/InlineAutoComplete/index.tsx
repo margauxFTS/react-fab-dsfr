@@ -8,7 +8,7 @@ import {
     type AutocompleteDsfrValue,
     type AutoCompleteValue,
     extractAutocompleteValue,
-} from "../AutoCompleteDsfr/index";
+} from "../AutoComplete/index";
 
 import {
     InlineEditSaveCancelButtons,

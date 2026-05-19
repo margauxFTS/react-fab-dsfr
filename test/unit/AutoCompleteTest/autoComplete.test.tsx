@@ -9,7 +9,7 @@ import {
     AutoCompleteDsfr,
     type AutoCompleteValue,
     extractAutocompleteValue,
-} from "@/src/AutoCompleteDsfr/index";
+} from "@/src/AutoComplete/index";
 
 jest.mock("clsx", () => jest.fn(() => "mock-clsx"));
 

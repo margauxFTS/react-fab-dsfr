@@ -164,18 +164,26 @@ import { InlineSelect } from "@lafabrique/react-fab-dsfr";
 
 ----
 
-### DateTimeInline
+### DateTimeInput
+
+Champ de saisie de date et optionnellement d'heure, émettant une date ISO.
+
+<div align="left">
+  <img src="./asset/datetimeinputClair.png" width="450"/>
+</div>
+
+<br/>
 
 ```tsx
 import DateTimeInput from "@lafabrique/react-fab-dsfr";
 ```
 |Prop| Défaut | Description|
 |----|--------|------------|
-|`onChange`|`undefined`| |
-|`dateProps`| - | |
-|`timeProps`|`undefined`| |
-|`withTime`|`false`| |
-|`gridProps`|`undefined`| |
+|`onChange`|`undefined`| Callback appelé avec la date ISO |
+|`dateProps`| - | Props du champ date |
+|`timeProps`|`undefined`| Props du champ heure |
+|`withTime`|`false`| Affiche ou non le champ heure |
+|`gridProps`|`undefined`| Props MUI Grid du conteneur |
 
 ----
 
