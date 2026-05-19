@@ -15,7 +15,7 @@ export default defineConfig([
     js.configs.recommended,
 
     {
-        files: ["**/*.js,jsx,mjs,ts,tsx"],
+        files: ["**/*.{js,jsx,mjs,ts,tsx}"],
         plugins:{
             react,
             "react-hooks": reactHooks,
@@ -42,4 +42,16 @@ export default defineConfig([
             "@typescript-eslint/no-unused-vars": "warn",
         },
     },
+
+    {
+        files: ["**/*.test.tsx", "**/*.test.ts"],
+        plugins: { jest },
+        languageOptions: {
+            globals: { ...jest.environments.globals.jest },
+        },
+        rules: {
+            ...jest.configs.recommended.rules,
+            "jest/expect-expect": "warn",
+        },
+    }
 ])
