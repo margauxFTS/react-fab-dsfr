@@ -1,6 +1,6 @@
 {
-  "name": "@margrosse/react-fab-dsfr",
-  "repository": "https://github.com/margrosse/react-fab-dsfr.git",
+  "name": "@margauxfts/react-fab-dsfr",
+  "repository": "https://github.com/margauxFTS/react-fab-dsfr.git",
   "version": "0.2.0",
   "description": "Librairie de composants génériques basés sur la React DSFR",
   "keywords": [
@@ -23,7 +23,8 @@
   "scripts": {
     "build": "npx tsc -p tsconfig.build.json",
     "prepare": "husky",
-    "test": "jest"
+    "test": "jest",
+    "pretest": "npx eslint"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.29.5",
@@ -40,15 +41,18 @@
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
     "eslint-plugin-jest": "^29.15.2",
+    "eslint-plugin-jest-dom": "^5.5.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-testing-library": "^7.16.2",
     "husky": "^9.1.7",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.3"
+    "typescript-eslint": "^8.59.4"
   },
   "peerDependencies": {
     "@codegouvfr/react-dsfr": "^1.32.1",

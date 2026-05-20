@@ -4,9 +4,9 @@ import { Grid, type GridSize } from "@mui/material";
 import { type ReactNode, useState } from "react";
 
 import {
-    AutoCompleteDsfr,
-    type AutocompleteDsfrValue,
-    type AutoCompleteValue,
+    AutoComplete,
+    type AutocompleteOption,
+    type AutocompleteValue,
     extractAutocompleteValue,
 } from "../AutoComplete/index";
 
@@ -17,8 +17,8 @@ import {
 
 type InlineAutoCompleteProps = {
     label: ReactNode;
-    value?: AutoCompleteValue;
-    options: AutoCompleteValue[];
+    value?: AutocompleteOption | null;
+    options: AutocompleteOption[];
     noOptionsText?: string;
     fieldSize?: GridSize;
     onChange?: (newValue: string) => void;
@@ -72,7 +72,7 @@ export function InlineAutoComplete({
                     />
                 )}
                 {modifiying && !disabled && (
-                    <AutoCompleteDsfr
+                    <AutoComplete
                         label=""
                         nativeAutocompleteProps={{
                             disableClearable: true,
@@ -82,7 +82,7 @@ export function InlineAutoComplete({
                             value: edition,
                             onChange: (
                                 event,
-                                values: AutocompleteDsfrValue,
+                                values: AutocompleteValue,
                             ) => {
                                 const value = extractAutocompleteValue(values);
                                 if (value) {

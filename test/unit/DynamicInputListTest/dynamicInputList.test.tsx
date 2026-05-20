@@ -78,5 +78,4 @@ describe("DynamicInputList", () => {
     });
 });
 
-// au revoir les amis ...
 

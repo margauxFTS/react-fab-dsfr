@@ -74,7 +74,7 @@ describe("DateTimeInput", () => {
             expect(screen.queryByDisplayValue("12:00")).not.toBeInTheDocument();
         })
 
-        it("affiche la date en mode contrôlé et masque l'heure si withTime est false", () => {
+        it("affiche la date en mode non contrôlé et masque l'heure si withTime est false", () => {
             setup({ dateDefaultValue: "2026-05-13", withTime: false });
             expect(screen.getByDisplayValue("2026-05-13")).toBeInTheDocument();
             expect(screen.queryByDisplayValue("12:00")).not.toBeInTheDocument();
