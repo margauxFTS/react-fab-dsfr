@@ -7,24 +7,6 @@ import { fireEvent, render, screen } from "@testing-library/react";
 
 import DateTimeInput from "@/src/DateTimeInput/index";
 
-jest.mock("@codegouvfr/react-dsfr/Input", () => ({
-    __esModule: true,
-    Input: ({
-        nativeInputProps,
-    }: {
-        nativeInputProps: React.InputHTMLAttributes<HTMLInputElement>;
-    }) => {
-        const { value, defaultValue, ...rest } = nativeInputProps;
-
-        return(
-            <input
-                {...rest}
-                {...(value !== undefined ? { value } : { defaultValue })}
-            />
-        );  
-    },
-}));
-
 describe("DateTimeInput", () => {
     
     function setup(props?: {

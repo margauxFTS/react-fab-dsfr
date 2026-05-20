@@ -7,10 +7,7 @@ import jestDom from "eslint-plugin-jest-dom";
 import testingLibrary from "eslint-plugin-testing-library";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import { defineConfig, globalIgnores } from "eslint/config";
-
-
-
-import { defineConfig, globalIgnores } from "eslint/config";
+import globals from "globals";
 
 export default defineConfig([
     // Ignorer les fichiers et dossiers suivants
@@ -21,15 +18,16 @@ export default defineConfig([
         ".husky/_/**",
     ]),
 
-    js.configs.recommended,
-
+    
     // Configuration globale pour les fichiers JavaScript et TypeScript
     {
         files: ["**/*.{js,jsx,mjs,ts,tsx}"],
+        ...js.configs.recommended,
         languageOptions: {
             globals: {
                 ...globals.browser, 
                 ...globals.jest,  
+                React: "readonly",
             },
         },
         plugins:{
@@ -41,6 +39,7 @@ export default defineConfig([
             react: {version: "detect"},
         },
         rules:{
+            ...js.configs.recommended.rules,
             "react/react-in-jsx-scope": "off",
             "react-hooks/rules-of-hooks": ["error"],
             "react-hooks/exhaustive-deps": ["error"],    
@@ -58,6 +57,7 @@ export default defineConfig([
         plugins: { "@typescript-eslint": tseslint.plugin },
         rules: {
             ...tseslint.configs.recommended.rules,
+            "no-unused-vars": "off",
             "@typescript-eslint/no-unused-vars": "warn",
         },
     },
@@ -77,7 +77,6 @@ export default defineConfig([
             ...jest.configs.recommended.rules,
             "jest/expect-expect": "warn",
             ...jestDom.configs.recommended.rules,
-            ...testingLibrary.configs.recommended.rules,
         },
     }
 ])

@@ -6,22 +6,22 @@ import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 
 import {
-    AutoCompleteDsfr,
-    type AutoCompleteValue,
+    AutoComplete,
+    type AutocompleteValue,
     extractAutocompleteValue,
 } from "@/src/AutoComplete/index";
 
 jest.mock("clsx", () => jest.fn(() => "mock-clsx"));
 
 describe("AutoCompleteDsfr", () => {
-    const mockOptions: AutoCompleteValue[] = [
+    const mockOptions: AutocompleteValue[] = [
         { id: "1", label: "Option 1" },
         { id: "2", label: "Option 2" },
     ];
 
     function setup(propsOverride = {}) {
         render(
-            <AutoCompleteDsfr
+            <AutoComplete
                 label="Test Label"
                 nativeAutocompleteProps={{
                     options: mockOptions,
@@ -40,7 +40,7 @@ describe("AutoCompleteDsfr", () => {
     });
 
     it("doit extraire la valeur autocomplete correctement", () => {
-        const value: AutoCompleteValue = { id: "1", label: "Option 1" };
+        const value: AutocompleteValue = { id: "1", label: "Option 1" };
 
         expect(extractAutocompleteValue(value)).toEqual(value);
         expect(extractAutocompleteValue(null)).toBeNull();
