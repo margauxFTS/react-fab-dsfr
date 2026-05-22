@@ -13,6 +13,9 @@ import {
 type InlineInputProps = {
     label: ReactNode;
     value: string;
+    name: string;
+    labelSize?: GridSize;
+    buttonSize?: GridSize;
     fieldSize?: GridSize;
     onChange?: (
         event: React.ChangeEvent<HTMLInputElement> | null,
@@ -28,7 +31,10 @@ type InlineInputProps = {
 export function InlineInput({
     label,
     value,
-    fieldSize = "auto",
+    name,
+    labelSize = 2,
+    buttonSize = 2,
+    fieldSize = "grow",
     onChange = undefined,
     editable = true,
     disabled = false,
@@ -54,7 +60,7 @@ export function InlineInput({
             container
             spacing={0}
         >
-            <Grid size={3}>{label}</Grid>
+            <Grid size={labelSize}><label htmlFor={name}>{label}</label></Grid>
            <Grid
                 className="cell-default"
                 size={fieldSize}
@@ -68,6 +74,8 @@ export function InlineInput({
                         ...nativeInputProps,
                         value: edition,
                         type: "text",
+                        id: name,
+                        name,
                         onChange: (event) => {
                             setEdition(event.target.value);
                             onChange?.(event);
@@ -76,7 +84,7 @@ export function InlineInput({
                 />
             </Grid>
 
-            <Grid size={3}>
+            <Grid size={buttonSize}>
                 {editable && (
                     <InlineEditSaveCancelButtons
                         {...nativeButtonsProps}
