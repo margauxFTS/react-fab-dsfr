@@ -5,10 +5,10 @@ import "@testing-library/jest-dom";
 
 import { fireEvent, render, screen } from "@testing-library/react";
 
-import type { AutoCompleteValue } from "@/src/AutoComplete";
+import type { AutocompleteOption, AutocompleteValue } from "@/src/AutoComplete";
 import { InlineAutoComplete } from "@/src/InlineAutoComplete";
 
-const mockOptions: AutoCompleteValue[] = [
+const mockOptions: AutocompleteOption[] = [
     { id: "1", label: "Option 1" },
     { id: "2", label: "Option 2" },
 ];
