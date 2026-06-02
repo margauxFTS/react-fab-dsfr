@@ -5,7 +5,7 @@ import "@testing-library/jest-dom";
 
 import { fireEvent, render, screen } from "@testing-library/react";
 
-import type { AutocompleteOption, AutocompleteValue } from "@/src/AutoComplete";
+import type { AutocompleteOption } from "@/src/AutoComplete";
 import { InlineAutoComplete } from "@/src/InlineAutoComplete";
 
 const mockOptions: AutocompleteOption[] = [
