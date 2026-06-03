@@ -27,9 +27,9 @@
     "pretest": "npx eslint"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.29.5",
-    "@babel/preset-react": "^7.28.5",
-    "@babel/preset-typescript": "^7.28.5",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-react": "^7.29.7",
+    "@babel/preset-typescript": "^7.29.7",
     "@commitlint/cli": "^20.5.3",
     "@commitlint/config-conventional": "^20.5.3",
     "@eslint/js": "^9.39.4",
@@ -37,7 +37,7 @@
     "@testing-library/react": "^16.3.2",
     "@types/jest": "^30.0.0",
     "@types/luxon": "^3.7.1",
-    "@types/react": "^19.2.15",
+    "@types/react": "^19.2.16",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
     "eslint-plugin-jest": "^29.15.2",
@@ -53,10 +53,10 @@
     "react": "19.2.5",
     "react-dom": "19.2.5",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.59.4"
+    "typescript-eslint": "^8.60.1"
   },
   "peerDependencies": {
-    "@codegouvfr/react-dsfr": "^1.32.1",
+    "@codegouvfr/react-dsfr": "^1.32.2",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^9.0.1",

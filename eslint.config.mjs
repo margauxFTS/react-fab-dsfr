@@ -77,6 +77,16 @@ export default defineConfig([
             ...jest.configs.recommended.rules,
             "jest/expect-expect": "warn",
             ...jestDom.configs.recommended.rules,
+            "no-restricted-syntax": [
+            "error",
+                {
+                    selector:
+                        "CallExpression[callee.object.name='jest'][callee.property.name='mock'] JSXElement",
+                    message:
+                        "Never use JSX inside jest.mock(). Mocking UI components is strictly forbidden. Test the real component and mock only the data layer (mutations, API functions) if needed.",
+                },
+            ],
+
         },
     }
 ])
