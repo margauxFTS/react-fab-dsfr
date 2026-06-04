@@ -18,8 +18,8 @@ type InlineInputProps = {
     buttonSize?: GridSize;
     fieldSize?: GridSize;
     onChange?: (
-        event: React.ChangeEvent<HTMLInputElement> | null,
         newValue?: string,
+        event?: React.ChangeEvent<HTMLInputElement>,
     ) => void;
     editable?: boolean;
     disabled?: boolean;
@@ -51,7 +51,7 @@ export function InlineInput({
 
     function onSave() {
         if (onChange) {
-            onChange(null, edition);
+            onChange(edition);
         }
     }
 
@@ -78,7 +78,7 @@ export function InlineInput({
                         name,
                         onChange: (event) => {
                             setEdition(event.target.value);
-                            onChange?.(event);
+                            onChange?.(event.target.value, event);
                         },
                     }}
                 />
