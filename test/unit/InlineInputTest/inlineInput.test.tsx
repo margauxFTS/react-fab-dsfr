@@ -6,22 +6,20 @@ import "@testing-library/jest-dom";
 import { fireEvent, render, screen } from "@testing-library/react";
 
 import { InlineInput } from "@/src/InlineInput";
+import React from "react";
 
 jest.mock("@codegouvfr/react-dsfr/Input", () => ({
-    __esModule: true,
-    default: ({
-        nativeInputProps,
-        disabled,
-    }: {
-        nativeInputProps: React.InputHTMLAttributes<HTMLInputElement>;
-        disabled?: boolean;
-    }) => (
-        <input
-            {...nativeInputProps}
-            disabled={disabled}
-        />
-    ),
+  __esModule: true,
+  default: (props: {
+    nativeInputProps?: React.InputHTMLAttributes<HTMLInputElement>;
+    disabled?: boolean;
+  }) =>
+    React.createElement("input", {
+      ...props.nativeInputProps,
+      disabled: props.disabled,
+    }),
 }));
+
 
 describe("InlineInput", () => {
     function setup(propsOverride = {}) {
