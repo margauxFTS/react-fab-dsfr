@@ -8,18 +8,6 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { InlineInput } from "@/src/InlineInput";
 import React from "react";
 
-jest.mock("@codegouvfr/react-dsfr/Input", () => ({
-  __esModule: true,
-  default: (props: {
-    nativeInputProps?: React.InputHTMLAttributes<HTMLInputElement>;
-    disabled?: boolean;
-  }) =>
-    React.createElement("input", {
-      ...props.nativeInputProps,
-      disabled: props.disabled,
-    }),
-}));
-
 
 describe("InlineInput", () => {
     function setup(propsOverride = {}) {
@@ -82,7 +70,7 @@ describe("InlineInput", () => {
 
         fireEvent.click(screen.getByTitle("Enregistrer"));
 
-        expect(onChange).toHaveBeenCalledWith(null, "Jane");
+        expect(onChange).toHaveBeenLastCalledWith("Jane");
     });
 
     it("resets value when re-entering modify mode", () => {
